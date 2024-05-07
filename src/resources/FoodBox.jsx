@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const FoodBox = ({ food }) => {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
   const [totalCalories, setTotalCalories] = useState(food.calories);
 
   const handleIncrement = () => {
@@ -10,7 +10,7 @@ const FoodBox = ({ food }) => {
   };
 
   const handleReset = () => {
-    setCount(1);
+    setCount(0);
     setTotalCalories(food.calories);
     onReset(food.id);
   };
