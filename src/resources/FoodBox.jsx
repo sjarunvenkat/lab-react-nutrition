@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const FoodBox = ({ food }) => {
   const [count, setCount] = useState(0);
-  const [totalCalories, setTotalCalories] = useState(food.calories);
+  const [totalCalories, setTotalCalories] = useState(0);
 
   const handleIncrement = () => {
     setCount(count + 1);
